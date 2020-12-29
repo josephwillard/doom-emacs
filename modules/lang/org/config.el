@@ -198,7 +198,7 @@ Is relative to `org-directory', unless it is absolute. Is used in Doom's default
         org-babel-lisp-eval-fn #'sly-eval)
 
   ;; I prefer C-c C-c over C-c ' (more consistent)
-  (define-key org-src-mode-map (kbd "C-c C-c") #'org-edit-src-exit)
+  ;; (define-key org-src-mode-map (kbd "C-c C-c") #'org-edit-src-exit)
 
   (defadvice! +org-fix-newline-and-indent-in-src-blocks-a (&optional indent _arg _interactive)
     "Mimic `newline-and-indent' in src blocks w/ lang-appropriate indentation."
